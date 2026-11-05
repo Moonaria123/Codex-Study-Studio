@@ -43,7 +43,7 @@
     "study-studio-en.zip": "61248b7fa6447595b23049b68fbce8eb3ba6e57e5879bc9101f4fddfdd62a99c",
     "study-studio-zh.zip": "6efba3abef8b4fe2baa7a1b9097788efce46833e5a01eea3f27e0b5790f64bd4"
   },
-  "publicationStatus": "New public repository created; content push, release and Pages verification pending.",
+  "publicationStatus": "PASS: v1.0.0 published; Pages deployed; release and website downloads match the canonical content and local working tree.",
   "historyNotice": "Inherited verification reports describe the legacy repository. Previously granted MIT permissions and third-party licences remain in force.",
   "newRepositoryId": 1446398159,
   "legacyVisibility": "private",
@@ -57,5 +57,7 @@
     "verification/relaunch-v1.0.0.json"
   ],
   "independentReview": "Completed; notice scope corrected to project-owned PolyForm material, third-party licences preserved.",
-  "whitespaceBoundary": "Full initial-import whitespace check flags one unchanged whitespace-only upstream source line (Chapter_Source.md:64). CRLF source files are intentionally preserved. All other staged text passes with cr-at-eol enabled."
+  "whitespaceBoundary": "Full initial-import whitespace check flags one unchanged whitespace-only upstream source line (Chapter_Source.md:64). CRLF source files are intentionally preserved. All other staged text passes with cr-at-eol enabled.",
+  "publicationEvidence": "relaunch-publication.json",
+  "releaseCommit": "426eed6f1e674dd6ee1a877c3f2b87590962ccab"
 }

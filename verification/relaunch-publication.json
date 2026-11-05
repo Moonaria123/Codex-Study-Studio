@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "verifiedAtUtc": "2026-11-05T01:47:39.167453+00:00",
+  "scope": {
+    "repository": "Moonaria123/Codex-Study-Studio",
+    "headSha": "426eed6f1e674dd6ee1a877c3f2b87590962ccab"
+  },
+  "repositories": {
+    "newPublic": {
+      "fullName": "Moonaria123/Codex-Study-Studio",
+      "id": "1446398159",
+      "visibility": "public",
+      "url": "https://github.com/Moonaria123/Codex-Study-Studio"
+    },
+    "oldPrivate": {
+      "fullName": "Moonaria123/Codex-Study-Studio-private",
+      "id": "1441982053",
+      "visibility": "private",
+      "url": "https://github.com/Moonaria123/Codex-Study-Studio-private"
+    },
+    "idsDiffer": true
+  },
+  "release": {
+    "tag": "v1.0.0",
+    "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/tag/v1.0.0",
+    "checkedAtUtc": "2026-11-05T01:40:46.3791834Z",
+    "checksumManifestValidatesAllThreeZipAssets": true,
+    "allCanonicalBytesMatch": true,
+    "allLiteralWorktreeBytesMatch": true,
+    "assets": [
+      {
+        "name": "ai-agents-tool-use-example.zip",
+        "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/download/v1.0.0/ai-agents-tool-use-example.zip",
+        "bytes": 8004059,
+        "sha256": "27a99c22502c2a671ee4c9ddc6bf3c418965e1b9fb479d6abc3c4dd3bb18c6a3",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "name": "SHA256SUMS.txt",
+        "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/download/v1.0.0/SHA256SUMS.txt",
+        "bytes": 269,
+        "sha256": "178319fbf01b84c605097742dd27056fcf29045df8d88ba18dc4f5dec343c6c9",
+        "literalWorktreeBytes": 269,
+        "literalWorktreeSha256": "178319fbf01b84c605097742dd27056fcf29045df8d88ba18dc4f5dec343c6c9",
+        "literalWorktreeExact": true,
+        "canonicalCommitBytes": 269,
+        "canonicalCommitSha256": "178319fbf01b84c605097742dd27056fcf29045df8d88ba18dc4f5dec343c6c9",
+        "canonicalExact": true,
+        "normalization": "The working-tree file was observed as CRLF (272 bytes, SHA256 f3f3725790f3c891c18ac999d6ab21f935b2714be22716c9f49619bdf860b8bc), then normalized to the existing committed LF bytes without changing the Git blob. The three checksum entries and calculated ZIP hashes all match."
+      },
+      {
+        "name": "study-studio-en.zip",
+        "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/download/v1.0.0/study-studio-en.zip",
+        "bytes": 91371,
+        "sha256": "61248b7fa6447595b23049b68fbce8eb3ba6e57e5879bc9101f4fddfdd62a99c",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "name": "study-studio-zh.zip",
+        "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/download/v1.0.0/study-studio-zh.zip",
+        "bytes": 92185,
+        "sha256": "6efba3abef8b4fe2baa7a1b9097788efce46833e5a01eea3f27e0b5790f64bd4",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      }
+    ]
+  },
+  "pages": {
+    "workflow": {
+      "id": 41949887715,
+      "url": "https://github.com/Moonaria123/Codex-Study-Studio/actions/runs/41949887715",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAtUtc": "2026-11-05T01:38:33Z",
+      "updatedAtUtc": "2026-11-05T01:39:01Z",
+      "headSha": "426eed6f1e674dd6ee1a877c3f2b87590962ccab"
+    },
+    "checkedAtUtc": "2026-11-05T01:42:20.2885680Z",
+    "baseUrl": "https://moonaria123.github.io/Codex-Study-Studio/",
+    "allCanonicalBytesMatch": true,
+    "allLiteralWorktreeBytesMatch": true,
+    "files": [
+      {
+        "path": "index.html",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/index.html",
+        "bytes": 9628,
+        "sha256": "a9378684080c60771384ca770355bc09a8eb53c5ce60ecda353dd14beb1bd7d7",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "path": "zh.html",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/zh.html",
+        "bytes": 9651,
+        "sha256": "5a47be0ed52a6780a2e4915bcb2269e3e9b576b8c25a596f3d323bbaae15974e",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "path": "demo/StudyHub.html",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/demo/StudyHub.html",
+        "bytes": 205448,
+        "sha256": "8348c356bfd3cce4d525f920073b9585bba61525488b39ec924afc9e3768f3bd",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "path": "downloads/SHA256SUMS.txt",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/downloads/SHA256SUMS.txt",
+        "bytes": 269,
+        "sha256": "178319fbf01b84c605097742dd27056fcf29045df8d88ba18dc4f5dec343c6c9",
+        "literalWorktreeBytes": 269,
+        "literalWorktreeSha256": "178319fbf01b84c605097742dd27056fcf29045df8d88ba18dc4f5dec343c6c9",
+        "literalWorktreeExact": true,
+        "canonicalCommitBytes": 269,
+        "canonicalCommitSha256": "178319fbf01b84c605097742dd27056fcf29045df8d88ba18dc4f5dec343c6c9",
+        "canonicalExact": true,
+        "normalization": "The working-tree file was observed as CRLF (272 bytes, SHA256 f3f3725790f3c891c18ac999d6ab21f935b2714be22716c9f49619bdf860b8bc), then normalized to the existing committed LF bytes."
+      },
+      {
+        "path": "downloads/ai-agents-tool-use-example.zip",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/downloads/ai-agents-tool-use-example.zip",
+        "bytes": 8004059,
+        "sha256": "27a99c22502c2a671ee4c9ddc6bf3c418965e1b9fb479d6abc3c4dd3bb18c6a3",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "path": "downloads/study-studio-en.zip",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/downloads/study-studio-en.zip",
+        "bytes": 91371,
+        "sha256": "61248b7fa6447595b23049b68fbce8eb3ba6e57e5879bc9101f4fddfdd62a99c",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      },
+      {
+        "path": "downloads/study-studio-zh.zip",
+        "url": "https://moonaria123.github.io/Codex-Study-Studio/downloads/study-studio-zh.zip",
+        "bytes": 92185,
+        "sha256": "6efba3abef8b4fe2baa7a1b9097788efce46833e5a01eea3f27e0b5790f64bd4",
+        "literalWorktreeExact": true,
+        "canonicalExact": true
+      }
+    ]
+  },
+  "verdictNote": "All published artifacts now match both the committed repository bytes and the literal local working tree. SHA256SUMS.txt was normalized from an observed CRLF checkout to the existing committed LF bytes; its Git blob was unchanged, and the checksum manifest validates all three ZIPs.",
+  "repositorySettings": {
+    "verifiedAtUtc": "2026-11-05T01:46:36.047731+00:00",
+    "method": "Authenticated GitHub settings UI",
+    "mainBranchProtection": {
+      "ruleCreated": true,
+      "matchingBranches": 1,
+      "requireConversationResolution": true,
+      "enforceForAdministrators": true,
+      "allowForcePushes": false,
+      "allowDeletions": false
+    },
+    "actionsDefaultToken": "Read repository contents and packages permissions",
+    "actionsCanCreateOrApprovePullRequests": false,
+    "secretProtectionEnabled": true,
+    "pushProtectionEnabled": true,
+    "pagesSource": {
+      "branch": "main",
+      "path": "/docs"
+    },
+    "pagesEnforceHttps": true,
+    "aboutWebsite": "https://moonaria123.github.io/Codex-Study-Studio/"
+  },
+  "validationWorkflows": [
+    {
+      "id": 41949723021,
+      "name": "Validate packages",
+      "conclusion": "success"
+    },
+    {
+      "id": 41949786028,
+      "name": "Publish release",
+      "conclusion": "success"
+    }
+  ],
+  "artifactVerifiedAtUtc": "2026-11-05T01:45:24.2000169Z"
+}

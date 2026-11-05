@@ -8,6 +8,8 @@ The new public repository starts a separate release sequence at **v1.0.0** on 5 
 
 Each skill ZIP includes `LICENSE`, `LICENSING.md` and a self-contained `NOTICE.md`. The example ZIP includes `PROJECT-LICENSE.txt`, `LICENSING.md`, `PROJECT-NOTICE.md` and Microsoft's separate MIT notice. The release check requires every archive to retain the original author's `Required Notice:` line. Current local checks are recorded in [relaunch-v1.0.0.json](relaunch-v1.0.0.json).
 
+[Final publication verification](relaunch-publication.json) confirms the new public and legacy private repository IDs, successful v1.0.0 release and Pages workflows, and byte-for-byte parity for four release assets and seven hosted files. The new repository has main-branch protection against force pushes and deletion, resolved-conversation requirements enforced for administrators, a read-only default Actions token, secret protection and push protection. Pages serves `main:/docs` with HTTPS enforced. This post-publication evidence is committed separately; the v1.0.0 tag and release assets remain unchanged.
+
 **Historical evidence below:** the inherited reports and version numbers describe work on the former repository, now named `Codex-Study-Studio-private`. Their original contents are retained for traceability; they do not establish the new repository's deployment, access settings or release status.
 
 ## Skill package scope
