@@ -1,0 +1,426 @@
+{
+  "voice": "Microsoft Zira Desktop",
+  "voice_locale": "en-US",
+  "narration_source": "../examples/ai-agents-tool-use/_studio/slide-content.json",
+  "duration_seconds": 356.033333,
+  "preview_start_seconds": 320.9,
+  "preview_duration_seconds": 15,
+  "caption_timing": "Measured per-caption WAV durations; 30 fps scene rounding",
+  "slides": [
+    {
+      "id": "S01",
+      "start": 0.0,
+      "duration": 34.63333333333333,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "An AI agent can extend its capabilities by using tools.",
+          "start": 0.2,
+          "end": 4.898685
+        },
+        {
+          "text": "A tool might be a small function, such as a calculator, or an API call to an external service.",
+          "start": 5.018685,
+          "end": 12.902177
+        },
+        {
+          "text": "The model generates a function call that identifies the tool and its arguments.",
+          "start": 13.022177,
+          "end": 18.330612
+        },
+        {
+          "text": "The function then runs, and its result returns to the model.",
+          "start": 18.450612,
+          "end": 23.09941
+        },
+        {
+          "text": "Keep those responsibilities clear: selecting a tool, executing its code, and composing the response are",
+          "start": 23.21941,
+          "end": 31.742812
+        },
+        {
+          "text": "separate steps.",
+          "start": 31.862812,
+          "end": 33.932109
+        }
+      ],
+      "slide_sha256": "e731438f7e4f1e13c5dbbf3461b912083da73176e5c818083976f3c344cd7f23"
+    },
+    {
+      "id": "S02",
+      "start": 34.633333,
+      "duration": 38.56666666666667,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "The lesson groups tool use around tasks that need interaction with external systems.",
+          "start": 34.833333,
+          "end": 40.831746
+        },
+        {
+          "text": "Information retrieval can query an API or database.",
+          "start": 40.951746,
+          "end": 45.370658
+        },
+        {
+          "text": "Code execution can support calculations, reports or simulations.",
+          "start": 45.490658,
+          "end": 51.25415
+        },
+        {
+          "text": "Workflow automation connects several operations, while support agents can interact with customer",
+          "start": 51.37415,
+          "end": 58.482449
+        },
+        {
+          "text": "systems or knowledge bases.",
+          "start": 58.602449,
+          "end": 61.391565
+        },
+        {
+          "text": "Content tools can check, summarise or evaluate text.",
+          "start": 61.511565,
+          "end": 66.650385
+        },
+        {
+          "text": "Begin with the task, then identify which tool capability it requires.",
+          "start": 66.770385,
+          "end": 72.50898
+        }
+      ],
+      "slide_sha256": "516c8d53b84b2de67d66e3fbe503621fbf44f0da44e9ba049e8c0895991cc9ca"
+    },
+    {
+      "id": "S03",
+      "start": 73.2,
+      "duration": 42.3,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "A working tool-use design needs more than a function description.",
+          "start": 73.4,
+          "end": 77.893787
+        },
+        {
+          "text": "Schemas define what is available.",
+          "start": 78.013787,
+          "end": 80.85288
+        },
+        {
+          "text": "Execution logic decides how and when a tool is invoked.",
+          "start": 80.97288,
+          "end": 85.406667
+        },
+        {
+          "text": "Message handling connects user inputs, model responses, calls and results.",
+          "start": 85.526667,
+          "end": 92.180136
+        },
+        {
+          "text": "Integration connects the actual tools.",
+          "start": 92.300136,
+          "end": 95.644127
+        },
+        {
+          "text": "Error handling and validation deal with failures, parameters and unexpected responses.",
+          "start": 95.764127,
+          "end": 102.317324
+        },
+        {
+          "text": "State management preserves context and earlier interactions across turns.",
+          "start": 102.437324,
+          "end": 107.970839
+        },
+        {
+          "text": "These are six distinct responsibilities, even when a framework provides several of them together.",
+          "start": 108.090839,
+          "end": 114.798957
+        }
+      ],
+      "slide_sha256": "3a9629133f30bcfba68a3b40ba2235e573f6ace13399da7f44bae2ba04159418"
+    },
+    {
+      "id": "S04",
+      "start": 115.5,
+      "duration": 33.4,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "The source illustrates a time lookup tool.",
+          "start": 115.7,
+          "end": 119.058957
+        },
+        {
+          "text": "Its schema gives the name get current time, explains its purpose, and describes a location parameter.",
+          "start": 119.178957,
+          "end": 126.847302
+        },
+        {
+          "text": "That parameter is a string and is required.",
+          "start": 126.967302,
+          "end": 130.306122
+        },
+        {
+          "text": "This description helps the model construct a request.",
+          "start": 130.426122,
+          "end": 134.464898
+        },
+        {
+          "text": "It does not execute the lookup.",
+          "start": 134.584898,
+          "end": 137.478912
+        },
+        {
+          "text": "Developers still need a model that supports function calling, the function descriptions, and the",
+          "start": 137.598912,
+          "end": 144.447302
+        },
+        {
+          "text": "implementation of every function they expose.",
+          "start": 144.567302,
+          "end": 148.22127
+        }
+      ],
+      "slide_sha256": "a084466e50d730268b36f52a8d4f1bb6b5f260370ba39071a5cd46abe35b1696"
+    },
+    {
+      "id": "S05",
+      "start": 148.9,
+      "duration": 34.833333333333336,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "Follow the complete loop.",
+          "start": 149.1,
+          "end": 151.484172
+        },
+        {
+          "text": "Send the user request and the available function descriptions to the model.",
+          "start": 151.604172,
+          "end": 156.56771
+        },
+        {
+          "text": "The model can return a function name and arguments.",
+          "start": 156.68771,
+          "end": 160.411429
+        },
+        {
+          "text": "Your application executes the corresponding function.",
+          "start": 160.531429,
+          "end": 164.690249
+        },
+        {
+          "text": "The result is sent back to the model, which uses it to respond.",
+          "start": 164.810249,
+          "end": 169.673968
+        },
+        {
+          "text": "In the source example, a call identifier links the function output to its call.",
+          "start": 169.793968,
+          "end": 175.937506
+        },
+        {
+          "text": "A returned tool call is an intermediate request to run code; it is not yet the answer to the user.",
+          "start": 176.057506,
+          "end": 183.04576
+        }
+      ],
+      "slide_sha256": "e785974945e07c5d5b2165f9f37a4afc9efdca272ed3b6c6eb7ef85cb6e2f616"
+    },
+    {
+      "id": "S06",
+      "start": 183.733333,
+      "duration": 35.3,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "The lesson shows two ways to connect tools.",
+          "start": 183.933333,
+          "end": 187.43737
+        },
+        {
+          "text": "With Microsoft Agent Framework, decorated Python functions can be serialised into schemas, and the",
+          "start": 187.55737,
+          "end": 195.470567
+        },
+        {
+          "text": "framework handles the exchange between the model and the code.",
+          "start": 195.590567,
+          "end": 199.91932
+        },
+        {
+          "text": "Tools may also come from a server using the Model Context Protocol, or MCP.",
+          "start": 200.03932,
+          "end": 206.462993
+        },
+        {
+          "text": "The framework reads the server\u2019s tool schemas and offers those tools alongside local ones.",
+          "start": 206.582993,
+          "end": 212.851474
+        },
+        {
+          "text": "When a remote tool is used, the generated query is sent to that server.",
+          "start": 212.971474,
+          "end": 218.350113
+        }
+      ],
+      "slide_sha256": "5e13bd85e84717e926f44c5632bd43a13bbbebda3c8eddb72660798f7f044e08"
+    },
+    {
+      "id": "S07",
+      "start": 219.033333,
+      "duration": 35.5,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "The source\u2019s managed-service example groups tools into two categories.",
+          "start": 219.233333,
+          "end": 224.457007
+        },
+        {
+          "text": "Knowledge tools include search and file retrieval.",
+          "start": 224.577007,
+          "end": 228.35093
+        },
+        {
+          "text": "Action tools include function calling and code interpretation.",
+          "start": 228.47093,
+          "end": 233.214694
+        },
+        {
+          "text": "A toolset makes multiple tools available together, while threads keep the history of a conversation.",
+          "start": 233.334694,
+          "end": 240.472925
+        },
+        {
+          "text": "The service example also handles tool invocation and responses on the server.",
+          "start": 240.592925,
+          "end": 246.181542
+        },
+        {
+          "text": "Keep the toolset and the thread distinct: one organises capabilities; the other retains messages.",
+          "start": 246.301542,
+          "end": 253.839864
+        }
+      ],
+      "slide_sha256": "dcb66fedab4e55e2f585054a65ca4188855b8dc5f9139c85230e729dec0b4c5e"
+    },
+    {
+      "id": "S08",
+      "start": 254.533333,
+      "duration": 40.4,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "Tools can touch real systems, so their permissions matter.",
+          "start": 254.733333,
+          "end": 259.431973
+        },
+        {
+          "text": "The lesson highlights risks from model-generated SQL, including injection and database tampering.",
+          "start": 259.551973,
+          "end": 266.610204
+        },
+        {
+          "text": "It recommends restricting database access to read-only operations and, for the database services",
+          "start": 266.730204,
+          "end": 274.028481
+        },
+        {
+          "text": "it names, assigning a read-only select role.",
+          "start": 274.148481,
+          "end": 278.307483
+        },
+        {
+          "text": "It also describes a secure environment and a read-only analytical database or warehouse.",
+          "start": 278.427483,
+          "end": 284.71093
+        },
+        {
+          "text": "The implementation decision is concrete: the application\u2019s database access should match the",
+          "start": 284.83093,
+          "end": 291.619501
+        },
+        {
+          "text": "restricted reading task.",
+          "start": 291.739501,
+          "end": 294.248571
+        }
+      ],
+      "slide_sha256": "fd615da39db3bda4881f3f6fae0fb94091f1a328a18441f69db18e579046e892"
+    },
+    {
+      "id": "S09",
+      "start": 294.933333,
+      "duration": 27.966666666666665,
+      "thinking_pause_seconds": 5.0,
+      "audio_segments": [
+        {
+          "text": "Consider this original question based on the source\u2019s time lookup.",
+          "start": 295.133333,
+          "end": 299.802132
+        },
+        {
+          "text": "A user asks for the current time in a city.",
+          "start": 299.922132,
+          "end": 303.311247
+        },
+        {
+          "text": "The model returns the function name get current time and the location arguments.",
+          "start": 303.431247,
+          "end": 308.744807
+        },
+        {
+          "text": "Has the user\u2019s question already been answered?",
+          "start": 308.864807,
+          "end": 312.373696
+        },
+        {
+          "text": "Name the next two application steps before revealing the solution.",
+          "start": 312.493696,
+          "end": 317.227256
+        }
+      ],
+      "slide_sha256": "baa1a6e9d9d1044e1a3a3df5155968a67e9d8b4f6fbe744d54772f0aea469e7e"
+    },
+    {
+      "id": "S10",
+      "start": 322.9,
+      "duration": 33.13333333333333,
+      "thinking_pause_seconds": 0.0,
+      "audio_segments": [
+        {
+          "text": "The tool call is not yet the final answer.",
+          "start": 323.1,
+          "end": 326.539002
+        },
+        {
+          "text": "First, execute the selected function with the supplied location.",
+          "start": 326.659002,
+          "end": 331.817732
+        },
+        {
+          "text": "Next, return its result to the model, preserving the call identifier used in the source example.",
+          "start": 331.937732,
+          "end": 339.355873
+        },
+        {
+          "text": "The model can then use that result to answer the user.",
+          "start": 339.475873,
+          "end": 343.264717
+        },
+        {
+          "text": "Recall the larger design: describe tools clearly, connect execution and messages, preserve state, and",
+          "start": 343.384717,
+          "end": 352.377732
+        },
+        {
+          "text": "validate inputs and results.",
+          "start": 352.497732,
+          "end": 355.351837
+        }
+      ],
+      "slide_sha256": "ce1462715d123c201e65990f0c492b90aa35f6946fb14bc1df1e0230a81e678d"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "baseline_file_count": 21,
+  "backup_verified": true,
+  "installed_changed_files": [
+    "SKILL.md",
+    "assets/document-templates/CharpterReview.md",
+    "assets/study-hub/history_archive.js",
+    "references/delivery-and-checks.md",
+    "references/interactive-hub.md",
+    "references/studio-modules.md"
+  ],
+  "original_install_name_retained": true,
+  "package_checks": {
+    "study-studio": {
+      "local_links_checked": 9,
+      "python_files_checked": 2,
+      "javascript_files_checked": 5
+    },
+    "study-studio-en": {
+      "local_links_checked": 9,
+      "python_files_checked": 2,
+      "javascript_files_checked": 5
+    },
+    "study-studio-zh": {
+      "local_links_checked": 9,
+      "python_files_checked": 2,
+      "javascript_files_checked": 5
+    }
+  },
+  "runtime_packages_identical": true,
+  "history_regression_cases": 9,
+  "history_regression_result": "PASS",
+  "targeted_personal_preset_scan": "no matches",
+  "scope": "Installed skill plus both repository skill packages; no course outputs edited"
+}

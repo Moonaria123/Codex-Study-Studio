@@ -1,0 +1,19 @@
+* text=auto
+*.md text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.cjs text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.png binary
+*.gif binary
+*.pptx binary
+*.pdf binary
+*.mp4 binary
+
+# Preserve source-evidence and generated-hub byte hashes across platforms.
+examples/** -text
+docs/demo/** -text

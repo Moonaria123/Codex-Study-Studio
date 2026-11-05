@@ -1,0 +1,42 @@
+{
+  "status": "PUBLIC",
+  "verifiedAt": "2026-11-02T14:43:51.220202+00:00",
+  "url": "https://www.youtube.com/watch?v=aLF_IylZ3y8",
+  "videoId": "aLF_IylZ3y8",
+  "title": "AI Agent Tool Use Explained | Codex Study Studio — Full Lesson",
+  "channel": {
+    "name": "MoonAria",
+    "id": "UCwefyx8mNH1oDHLEND5WxKA",
+    "handle": "@MoonAriaJames"
+  },
+  "sourceVideo": "examples/ai-agents-tool-use/Chapter 04 - Tool Use/Lecture.mp4",
+  "sourceDurationSeconds": 356.080408,
+  "sourceVideoSha256": "7f7ea6b50c7b3fd72ab808af63cc756ff4f719dd0fb79911bfb793704464dfba",
+  "captionFile": "examples/ai-agents-tool-use/Chapter 04 - Tool Use/Lecture.srt",
+  "captionSha256": "86d8905bb168b711a5162fb70450db724588de749c90ada68588debbbc76f9ef",
+  "captionLanguage": "en-US",
+  "captionCues": 65,
+  "publicationEvidence": [
+    "YouTube Studio content list shows Public with publication date 2026-11-02.",
+    "Upload checks completed with no copyright issue reported at verification time.",
+    "The public watch page loaded the matching title, channel and lesson, and playback advanced to 0:46.",
+    "The watch-player settings include the uploaded English (United States) subtitle track.",
+    "The quality menu offers 720p; this option was selected.",
+    "All ten supplied chapter timestamps appear as clickable time links in the description.",
+    "The description retains Microsoft MIT attribution and synthetic-narration disclosure."
+  ],
+  "durationDisplay": {
+    "studioList": "5:57",
+    "watchPlayer": "5:56"
+  },
+  "disclosure": {
+    "aiContent": true,
+    "paidPromotion": false,
+    "madeForKids": false
+  },
+  "limits": [
+    "The public watch-page check used the signed-in Chrome session; no anonymous-playback claim is made.",
+    "YouTube Studio indicates external description links need one-time channel verification to become clickable.",
+    "Playback availability and caption-track selection were checked, not a complete subjective audio review."
+  ]
+}

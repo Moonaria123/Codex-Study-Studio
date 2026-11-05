@@ -1,0 +1,374 @@
+{
+  "schema": 1,
+  "courseId": "study-studio-ai-agents-tool-use",
+  "title": "AI Agents: Tool Use in Practice",
+  "subtitle": "From a function schema to a grounded response",
+  "chapter_dir": "Chapter 04 - Tool Use",
+  "language": "en-GB",
+  "source_title": "AI Agents for Beginners — Tool Use Design Pattern",
+  "source_short_title": "Microsoft AI Agents · Tool Use",
+  "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md",
+  "source_commit": "f09e94ffe170f8af6d3db7c42987bbe4db227723",
+  "license_file": "_source/MICROSOFT-MIT-LICENSE.txt",
+  "attribution": "Adapted from Microsoft AI Agents for Beginners. Copyright (c) Microsoft Corporation. MIT License.",
+  "slides": [
+    {
+      "id": "S01",
+      "title": "Give your agent tools",
+      "kicker": "TOOL USE / FROM LANGUAGE TO ACTION",
+      "bullets": [
+        "Tools are executable code: functions or external API calls.",
+        "The model selects a tool and supplies arguments.",
+        "Execution produces a result the model can use."
+      ],
+      "narration": "An AI agent can extend its capabilities by using tools. A tool might be a small function, such as a calculator, or an API call to an external service. The model generates a function call that identifies the tool and its arguments. The function then runs, and its result returns to the model. Keep those responsibilities clear: selecting a tool, executing its code, and composing the response are separate steps.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 27–61",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L27-L61",
+      "knowledge_ids": [
+        "T-K01",
+        "T-K05"
+      ],
+      "visual": "pattern",
+      "visual_data": {
+        "layout": "flow",
+        "nodes": [
+          {
+            "title": "Model",
+            "text": "Select a tool and its arguments"
+          },
+          {
+            "title": "Tool code",
+            "text": "Execute the requested function"
+          },
+          {
+            "title": "Model response",
+            "text": "Use the returned result"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S02",
+      "title": "Start with the task",
+      "kicker": "01 / WHERE TOOL USE FITS",
+      "bullets": [
+        "Retrieve current information from APIs or databases.",
+        "Execute code, generate reports or run simulations.",
+        "Automate workflows and support customer queries.",
+        "Use editing and evaluation tools for content."
+      ],
+      "narration": "The lesson groups tool use around tasks that need interaction with external systems. Information retrieval can query an API or database. Code execution can support calculations, reports or simulations. Workflow automation connects several operations, while support agents can interact with customer systems or knowledge bases. Content tools can check, summarise or evaluate text. Begin with the task, then identify which tool capability it requires.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 31–39",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L31-L39",
+      "knowledge_ids": [
+        "T-K02"
+      ],
+      "visual": "use-cases",
+      "visual_data": {
+        "layout": "compare",
+        "nodes": [
+          {
+            "title": "Retrieve",
+            "text": "APIs and databases"
+          },
+          {
+            "title": "Execute",
+            "text": "Code, reports and simulations"
+          },
+          {
+            "title": "Coordinate",
+            "text": "Workflows and customer support"
+          },
+          {
+            "title": "Edit",
+            "text": "Content checking and evaluation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S03",
+      "title": "Build six connected components",
+      "kicker": "02 / AGENT IMPLEMENTATION",
+      "bullets": [
+        "Schemas + execution logic describe and invoke tools.",
+        "Message handling + integration connect the steps.",
+        "Validation + state management keep interactions consistent."
+      ],
+      "narration": "A working tool-use design needs more than a function description. Schemas define what is available. Execution logic decides how and when a tool is invoked. Message handling connects user inputs, model responses, calls and results. Integration connects the actual tools. Error handling and validation deal with failures, parameters and unexpected responses. State management preserves context and earlier interactions across turns. These are six distinct responsibilities, even when a framework provides several of them together.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 41–55",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L41-L55",
+      "knowledge_ids": [
+        "T-K03"
+      ],
+      "visual": "building-blocks",
+      "visual_data": {
+        "layout": "stack",
+        "nodes": [
+          {
+            "title": "Describe + invoke",
+            "text": "Schemas and function execution logic"
+          },
+          {
+            "title": "Connect",
+            "text": "Message handling and tool integration"
+          },
+          {
+            "title": "Validate + remember",
+            "text": "Error handling and state management"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S04",
+      "title": "Write the tool’s contract",
+      "kicker": "03 / FUNCTION SCHEMA",
+      "bullets": [
+        "Name: get_current_time",
+        "Purpose: get the current time in a location.",
+        "Parameter: location, a required string.",
+        "A schema describes the function; code implements it."
+      ],
+      "narration": "The source illustrates a time lookup tool. Its schema gives the name get current time, explains its purpose, and describes a location parameter. That parameter is a string and is required. This description helps the model construct a request. It does not execute the lookup. Developers still need a model that supports function calling, the function descriptions, and the implementation of every function they expose.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 63–108",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L63-L108",
+      "knowledge_ids": [
+        "T-K04",
+        "T-K05"
+      ],
+      "visual": "tool-schema",
+      "visual_data": {
+        "layout": "schema",
+        "nodes": [
+          {
+            "title": "name",
+            "text": "get_current_time"
+          },
+          {
+            "title": "description",
+            "text": "Get the current time in a given location"
+          },
+          {
+            "title": "parameters",
+            "text": "location: string · required"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S05",
+      "title": "Close the function-call loop",
+      "kicker": "04 / REQUEST → CALL → RESULT → ANSWER",
+      "bullets": [
+        "Send the request and available function descriptions.",
+        "Receive a function name and arguments.",
+        "Execute the function; return its matching tool result.",
+        "Let the model use that result to answer."
+      ],
+      "narration": "Follow the complete loop. Send the user request and the available function descriptions to the model. The model can return a function name and arguments. Your application executes the corresponding function. The result is sent back to the model, which uses it to respond. In the source example, a call identifier links the function output to its call. A returned tool call is an intermediate request to run code; it is not yet the answer to the user.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 61–192",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L61-L192",
+      "knowledge_ids": [
+        "T-K05"
+      ],
+      "visual": "call-lifecycle",
+      "visual_data": {
+        "layout": "flow",
+        "nodes": [
+          {
+            "title": "Request + schemas",
+            "text": "Provide intent and available capabilities"
+          },
+          {
+            "title": "Function call",
+            "text": "Receive name and arguments"
+          },
+          {
+            "title": "Matching result",
+            "text": "Execute code and return the call result"
+          },
+          {
+            "title": "Final answer",
+            "text": "Let the model use the returned information"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S06",
+      "title": "Connect local and remote tools",
+      "kicker": "05 / FRAMEWORKS AND MCP",
+      "bullets": [
+        "Decorated functions can become tools with generated schemas.",
+        "A framework can handle the model–tool message exchange.",
+        "An MCP server publishes tools and their schemas.",
+        "Remote-tool queries are sent to that server."
+      ],
+      "narration": "The lesson shows two ways to connect tools. With Microsoft Agent Framework, decorated Python functions can be serialised into schemas, and the framework handles the exchange between the model and the code. Tools may also come from a server using the Model Context Protocol, or MCP. The framework reads the server’s tool schemas and offers those tools alongside local ones. When a remote tool is used, the generated query is sent to that server.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 208–245",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L208-L245",
+      "knowledge_ids": [
+        "T-K06"
+      ],
+      "visual": "framework-and-mcp",
+      "visual_data": {
+        "layout": "compare",
+        "nodes": [
+          {
+            "title": "Local function",
+            "text": "Function → generated schema → model"
+          },
+          {
+            "title": "MCP server",
+            "text": "Published tools and schemas → framework"
+          },
+          {
+            "title": "Remote query",
+            "text": "The query is sent to the tool server"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S07",
+      "title": "Match tools to information or action",
+      "kicker": "06 / MANAGED AGENT SERVICE",
+      "bullets": [
+        "Knowledge tools include search and file retrieval.",
+        "Action tools include function calling and code interpretation.",
+        "A toolset groups available tools.",
+        "Threads retain the conversation’s message history."
+      ],
+      "narration": "The source’s managed-service example groups tools into two categories. Knowledge tools include search and file retrieval. Action tools include function calling and code interpretation. A toolset makes multiple tools available together, while threads keep the history of a conversation. The service example also handles tool invocation and responses on the server. Keep the toolset and the thread distinct: one organises capabilities; the other retains messages.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 268–291",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L268-L291",
+      "knowledge_ids": [
+        "T-K07"
+      ],
+      "visual": "knowledge-and-action",
+      "visual_data": {
+        "layout": "compare",
+        "nodes": [
+          {
+            "title": "Knowledge tools",
+            "text": "Search and file retrieval"
+          },
+          {
+            "title": "Action tools",
+            "text": "Function calls and code interpretation"
+          },
+          {
+            "title": "Toolset / thread",
+            "text": "Available capabilities / message history"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S08",
+      "title": "Bound database access",
+      "kicker": "07 / TRUSTWORTHY TOOL USE",
+      "bullets": [
+        "Generated SQL can create injection or tampering risks.",
+        "Configure restricted, read-only database access.",
+        "Assign a read-only SELECT role where applicable.",
+        "Use a secure execution environment."
+      ],
+      "narration": "Tools can touch real systems, so their permissions matter. The lesson highlights risks from model-generated SQL, including injection and database tampering. It recommends restricting database access to read-only operations and, for the database services it names, assigning a read-only select role. It also describes a secure environment and a read-only analytical database or warehouse. The implementation decision is concrete: the application’s database access should match the restricted reading task.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 329–333",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L329-L333",
+      "knowledge_ids": [
+        "T-K08"
+      ],
+      "visual": "read-only-security",
+      "visual_data": {
+        "layout": "flow",
+        "nodes": [
+          {
+            "title": "Generated SQL",
+            "text": "Recognise injection and tampering risks"
+          },
+          {
+            "title": "Restricted role",
+            "text": "Read-only SELECT access"
+          },
+          {
+            "title": "Protected execution",
+            "text": "Secure environment and read-only data"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S09",
+      "title": "What should the application do next?",
+      "kicker": "ORIGINAL QUESTION / FOLLOW THE CALL",
+      "bullets": [
+        "User asks for the current time in a city.",
+        "Model returns get_current_time with location arguments.",
+        "Is this already the final answer?",
+        "Name the next two steps before revealing the solution."
+      ],
+      "narration": "Consider this original question based on the source’s time lookup. A user asks for the current time in a city. The model returns the function name get current time and the location arguments. Has the user’s question already been answered? Name the next two application steps before revealing the solution.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 61–192",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L61-L192",
+      "knowledge_ids": [
+        "T-K04",
+        "T-K05"
+      ],
+      "visual": "worked-question",
+      "visual_data": {
+        "layout": "question",
+        "nodes": [
+          {
+            "title": "Received",
+            "text": "get_current_time(location = city)"
+          },
+          {
+            "title": "Your decision",
+            "text": "What must happen before the final answer?"
+          }
+        ]
+      },
+      "thinking_seconds": 5
+    },
+    {
+      "id": "S10",
+      "title": "Execute. Return. Then answer.",
+      "kicker": "ORIGINAL QUESTION / SOLUTION",
+      "bullets": [
+        "Execute get_current_time using the supplied location.",
+        "Send its result back with the matching call identifier.",
+        "Let the model use the result to produce the final answer.",
+        "The tool call and the tool result are different messages."
+      ],
+      "narration": "The tool call is not yet the final answer. First, execute the selected function with the supplied location. Next, return its result to the model, preserving the call identifier used in the source example. The model can then use that result to answer the user. Recall the larger design: describe tools clearly, connect execution and messages, preserve state, and validate inputs and results.",
+      "source": "Microsoft AI Agents for Beginners, Tool Use, lines 45–192",
+      "source_url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md#L45-L192",
+      "knowledge_ids": [
+        "T-K03",
+        "T-K04",
+        "T-K05"
+      ],
+      "visual": "worked-answer",
+      "visual_data": {
+        "layout": "flow",
+        "nodes": [
+          {
+            "title": "Execute",
+            "text": "Run the selected function with its arguments"
+          },
+          {
+            "title": "Return",
+            "text": "Attach the result to the matching call"
+          },
+          {
+            "title": "Answer",
+            "text": "Use the returned information"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+1
+00:00:00,200 --> 00:00:04,899
+An AI agent can extend its capabilities by using
+tools.
+
+2
+00:00:05,019 --> 00:00:12,902
+A tool might be a small function, such as a
+calculator, or an API call to an external service.
+
+3
+00:00:13,022 --> 00:00:18,331
+The model generates a function call that identifies
+the tool and its arguments.
+
+4
+00:00:18,451 --> 00:00:23,099
+The function then runs, and its result returns to the
+model.
+
+5
+00:00:23,219 --> 00:00:31,743
+Keep those responsibilities clear: selecting a tool,
+executing its code, and composing the response are
+
+6
+00:00:31,863 --> 00:00:33,932
+separate steps.
+
+7
+00:00:34,833 --> 00:00:40,832
+The lesson groups tool use around tasks that need
+interaction with external systems.
+
+8
+00:00:40,952 --> 00:00:45,371
+Information retrieval can query an API or database.
+
+9
+00:00:45,491 --> 00:00:51,254
+Code execution can support calculations, reports or
+simulations.
+
+10
+00:00:51,374 --> 00:00:58,482
+Workflow automation connects several operations, while
+support agents can interact with customer
+
+11
+00:00:58,602 --> 00:01:01,392
+systems or knowledge bases.
+
+12
+00:01:01,512 --> 00:01:06,650
+Content tools can check, summarise or evaluate text.
+
+13
+00:01:06,770 --> 00:01:12,509
+Begin with the task, then identify which tool
+capability it requires.
+
+14
+00:01:13,400 --> 00:01:17,894
+A working tool-use design needs more than a function
+description.
+
+15
+00:01:18,014 --> 00:01:20,853
+Schemas define what is available.
+
+16
+00:01:20,973 --> 00:01:25,407
+Execution logic decides how and when a tool is
+invoked.
+
+17
+00:01:25,527 --> 00:01:32,180
+Message handling connects user inputs, model
+responses, calls and results.
+
+18
+00:01:32,300 --> 00:01:35,644
+Integration connects the actual tools.
+
+19
+00:01:35,764 --> 00:01:42,317
+Error handling and validation deal with failures,
+parameters and unexpected responses.
+
+20
+00:01:42,437 --> 00:01:47,971
+State management preserves context and earlier
+interactions across turns.
+
+21
+00:01:48,091 --> 00:01:54,799
+These are six distinct responsibilities, even when a
+framework provides several of them together.
+
+22
+00:01:55,700 --> 00:01:59,059
+The source illustrates a time lookup tool.
+
+23
+00:01:59,179 --> 00:02:06,847
+Its schema gives the name get current time, explains
+its purpose, and describes a location parameter.
+
+24
+00:02:06,967 --> 00:02:10,306
+That parameter is a string and is required.
+
+25
+00:02:10,426 --> 00:02:14,465
+This description helps the model construct a request.
+
+26
+00:02:14,585 --> 00:02:17,479
+It does not execute the lookup.
+
+27
+00:02:17,599 --> 00:02:24,447
+Developers still need a model that supports function
+calling, the function descriptions, and the
+
+28
+00:02:24,567 --> 00:02:28,221
+implementation of every function they expose.
+
+29
+00:02:29,100 --> 00:02:31,484
+Follow the complete loop.
+
+30
+00:02:31,604 --> 00:02:36,568
+Send the user request and the available function
+descriptions to the model.
+
+31
+00:02:36,688 --> 00:02:40,411
+The model can return a function name and arguments.
+
+32
+00:02:40,531 --> 00:02:44,690
+Your application executes the corresponding function.
+
+33
+00:02:44,810 --> 00:02:49,674
+The result is sent back to the model, which uses it to
+respond.
+
+34
+00:02:49,794 --> 00:02:55,938
+In the source example, a call identifier links the
+function output to its call.
+
+35
+00:02:56,058 --> 00:03:03,046
+A returned tool call is an intermediate request to run
+code; it is not yet the answer to the user.
+
+36
+00:03:03,933 --> 00:03:07,437
+The lesson shows two ways to connect tools.
+
+37
+00:03:07,557 --> 00:03:15,471
+With Microsoft Agent Framework, decorated Python
+functions can be serialised into schemas, and the
+
+38
+00:03:15,591 --> 00:03:19,919
+framework handles the exchange between the model and
+the code.
+
+39
+00:03:20,039 --> 00:03:26,463
+Tools may also come from a server using the Model
+Context Protocol, or MCP.
+
+40
+00:03:26,583 --> 00:03:32,851
+The framework reads the server’s tool schemas and
+offers those tools alongside local ones.
+
+41
+00:03:32,971 --> 00:03:38,350
+When a remote tool is used, the generated query is
+sent to that server.
+
+42
+00:03:39,233 --> 00:03:44,457
+The source’s managed-service example groups tools into
+two categories.
+
+43
+00:03:44,577 --> 00:03:48,351
+Knowledge tools include search and file retrieval.
+
+44
+00:03:48,471 --> 00:03:53,215
+Action tools include function calling and code
+interpretation.
+
+45
+00:03:53,335 --> 00:04:00,473
+A toolset makes multiple tools available together,
+while threads keep the history of a conversation.
+
+46
+00:04:00,593 --> 00:04:06,182
+The service example also handles tool invocation and
+responses on the server.
+
+47
+00:04:06,302 --> 00:04:13,840
+Keep the toolset and the thread distinct: one
+organises capabilities; the other retains messages.
+
+48
+00:04:14,733 --> 00:04:19,432
+Tools can touch real systems, so their permissions
+matter.
+
+49
+00:04:19,552 --> 00:04:26,610
+The lesson highlights risks from model-generated SQL,
+including injection and database tampering.
+
+50
+00:04:26,730 --> 00:04:34,028
+It recommends restricting database access to read-only
+operations and, for the database services
+
+51
+00:04:34,148 --> 00:04:38,307
+it names, assigning a read-only select role.
+
+52
+00:04:38,427 --> 00:04:44,711
+It also describes a secure environment and a read-only
+analytical database or warehouse.
+
+53
+00:04:44,831 --> 00:04:51,620
+The implementation decision is concrete: the
+application’s database access should match the
+
+54
+00:04:51,740 --> 00:04:54,249
+restricted reading task.
+
+55
+00:04:55,133 --> 00:04:59,802
+Consider this original question based on the source’s
+time lookup.
+
+56
+00:04:59,922 --> 00:05:03,311
+A user asks for the current time in a city.
+
+57
+00:05:03,431 --> 00:05:08,745
+The model returns the function name get current time
+and the location arguments.
+
+58
+00:05:08,865 --> 00:05:12,374
+Has the user’s question already been answered?
+
+59
+00:05:12,494 --> 00:05:17,227
+Name the next two application steps before revealing
+the solution.
+
+60
+00:05:23,100 --> 00:05:26,539
+The tool call is not yet the final answer.
+
+61
+00:05:26,659 --> 00:05:31,818
+First, execute the selected function with the supplied
+location.
+
+62
+00:05:31,938 --> 00:05:39,356
+Next, return its result to the model, preserving the
+call identifier used in the source example.
+
+63
+00:05:39,476 --> 00:05:43,265
+The model can then use that result to answer the user.
+
+64
+00:05:43,385 --> 00:05:52,378
+Recall the larger design: describe tools clearly,
+connect execution and messages, preserve state, and
+
+65
+00:05:52,498 --> 00:05:55,352
+validate inputs and results.

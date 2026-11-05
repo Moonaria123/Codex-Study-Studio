@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "verifiedAt": "2026-11-01T16:46:58.217106+00:00",
+  "contentCommit": "90a74533a55c54eb3d43b71db3d3738302c210d3",
+  "repository": "https://github.com/Moonaria123/Codex-Study-Studio",
+  "visibility": "public",
+  "licence": "MIT",
+  "collaborators": [
+    {
+      "login": "Moonaria123",
+      "role": "admin"
+    }
+  ],
+  "pages": {
+    "html_url": "https://moonaria123.github.io/Codex-Study-Studio/",
+    "status": "built",
+    "https_enforced": true,
+    "source": {
+      "branch": "main",
+      "path": "/docs"
+    }
+  },
+  "actions": {
+    "default_workflow_permissions": "read",
+    "can_approve_pull_request_reviews": false
+  },
+  "branchProtection": {
+    "enforce_admins": true,
+    "allow_force_pushes": false,
+    "allow_deletions": false,
+    "required_conversation_resolution": true
+  },
+  "secretScanning": "enabled",
+  "secretPushProtection": "enabled",
+  "httpsByteChecks": [
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/index.html",
+      "status": 200,
+      "bytes": 9522,
+      "sha256": "7f93c2f38c0f9048b993005ab7a5e9b5801eb8fb7d7e66c704de32efef2783c1",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/zh.html",
+      "status": 200,
+      "bytes": 9586,
+      "sha256": "0fbfadc5a0676d50d79f199f2b81789a22c67f66d7c40be1ab38d3c790d455a6",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/demo/StudyHub.html",
+      "status": 200,
+      "bytes": 188180,
+      "sha256": "773a7fe489bc99e1e2e4540f8fcba4da519f5ab77669d327191b9ca215b10e79",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/demo/Lecture_Preview_15s.mp4",
+      "status": 200,
+      "bytes": 387654,
+      "sha256": "538f54314d4fe6084c4117783a775d30c5d9b44364499baa40d47a1467be5426",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/assets/hero.png",
+      "status": 200,
+      "bytes": 2233338,
+      "sha256": "1d5998f37ea974173b626d0d9519f4fbf63607c460c077e8b09645a280edd3d2",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/assets/preview.gif",
+      "status": 200,
+      "bytes": 471292,
+      "sha256": "bac071cc93ffe7ce02eb71d97e1fc2bd2ffc22c9009a9a756b5e1b83e6121fe5",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/assets/preview-poster.png",
+      "status": 200,
+      "bytes": 303077,
+      "sha256": "75f000e9533260dce49098bc375445bf080e855f103c1935f50882c39c92c2a0",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/assets/site.css",
+      "status": 200,
+      "bytes": 8852,
+      "sha256": "06056f339857c1b6054c0616dfca3824252da21a8b4f3b55489a0783a5fc451a",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://moonaria123.github.io/Codex-Study-Studio/assets/knowledge-overview.png",
+      "status": 200,
+      "bytes": 209716,
+      "sha256": "71466f9f4884003796b28c525f02fa586ac4e05e6b131fea4535f958e6978cb1",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/latest/download/study-studio-en.zip",
+      "status": 200,
+      "bytes": 84084,
+      "sha256": "2a6cf0e0b9dab3481368630be7697e76e55141b31f13158a562847de649509fb",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/latest/download/study-studio-zh.zip",
+      "status": 200,
+      "bytes": 84866,
+      "sha256": "630e92f9351a8afb292ec7b6a53ab0f79c5adb7f8728a9ea848d3be80f0c02e3",
+      "matchesLocalArtifact": true
+    },
+    {
+      "url": "https://github.com/Moonaria123/Codex-Study-Studio/releases/latest/download/SHA256SUMS.txt",
+      "status": 200,
+      "bytes": 174,
+      "sha256": "13ab26622dee2d3500e11d306affb07130e3bb0ff81e6cc063c295880c56b8be",
+      "matchesLocalArtifact": true
+    }
+  ],
+  "ciRun": "https://github.com/Moonaria123/Codex-Study-Studio/actions/runs/41327915124",
+  "pagesRun": "https://github.com/Moonaria123/Codex-Study-Studio/actions/runs/41327921444",
+  "youtube": "Full lesson subsequently published; see youtube-publication.json for the dated verification record."
+}

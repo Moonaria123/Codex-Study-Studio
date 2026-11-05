@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "input": "examples/ai-agents-tool-use/StudyHub.html",
+  "channel": "msedge",
+  "checks": [
+    {
+      "name": "three-module-home",
+      "status": "PASS"
+    },
+    {
+      "name": "map-expand-zoom-reload-and-png-svg-download",
+      "status": "PASS",
+      "details": {
+        "expanded": 17,
+        "svgBytes": 8843,
+        "pngBytes": 269715
+      }
+    },
+    {
+      "name": "flashcard-edit-rating-reload-and-frozen-old-snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "quiz-keep-studying-save-resume-and-checkpoint-deduplication",
+      "status": "PASS"
+    },
+    {
+      "name": "completed-score-time-snapshot-and-two-independent-mistake-attempts",
+      "status": "PASS"
+    },
+    {
+      "name": "discard-only-removes-draft-and-next-session-is-fresh",
+      "status": "PASS"
+    },
+    {
+      "name": "complete-json-backup-fresh-context-round-trip",
+      "status": "PASS",
+      "details": {
+        "histories": 7,
+        "drafts": 2,
+        "bytes": 224037
+      }
+    },
+    {
+      "name": "duplicate-html-history-import-does-not-inflate-records",
+      "status": "PASS"
+    },
+    {
+      "name": "reject-foreign-course-without-state-change",
+      "status": "PASS"
+    },
+    {
+      "name": "reject-prototype-key-without-state-change",
+      "status": "PASS"
+    },
+    {
+      "name": "reject-malformed-json-without-state-change",
+      "status": "PASS"
+    },
+    {
+      "name": "reject-invalid-snapshot-without-state-change",
+      "status": "PASS"
+    },
+    {
+      "name": "home-360",
+      "status": "PASS",
+      "details": {
+        "width": 360,
+        "document": 360,
+        "body": 360
+      }
+    },
+    {
+      "name": "map-360",
+      "status": "PASS",
+      "details": {
+        "width": 360,
+        "document": 360,
+        "body": 360
+      }
+    },
+    {
+      "name": "flashcards-360",
+      "status": "PASS",
+      "details": {
+        "width": 360,
+        "document": 360,
+        "body": 360
+      }
+    },
+    {
+      "name": "quiz-360",
+      "status": "PASS",
+      "details": {
+        "width": 360,
+        "document": 360,
+        "body": 360
+      }
+    },
+    {
+      "name": "mistakes-360",
+      "status": "PASS",
+      "details": {
+        "width": 360,
+        "document": 360,
+        "body": 360
+      }
+    },
+    {
+      "name": "native-print-action-and-print-css-pdf-with-full-explanations",
+      "status": "PASS"
+    },
+    {
+      "name": "no-browser-errors-or-network-requests",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "inputSha256": "8348c356bfd3cce4d525f920073b9585bba61525488b39ec924afc9e3768f3bd",
+  "chapterId": "4",
+  "browserVersion": "156.0.4314.58",
+  "finishedAt": "2026-11-02T16:05:30.625Z"
+}

@@ -1,0 +1,420 @@
+{
+  "chapter": "4",
+  "title": "Tool Use Design Pattern",
+  "questions": [
+    {
+      "id": "T-Q01",
+      "number": 1,
+      "marks": 1,
+      "topic": "Tool definition",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 27–29",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T01"
+      ],
+      "knowledge_points": [
+        "T-K01"
+      ],
+      "format": "mcq",
+      "difficulty": "Foundation",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "Which option best describes a tool in the source’s design pattern?",
+      "statements": [],
+      "options": {
+        "A": "Only a sentence in the system prompt",
+        "B": "A final answer already written by the model",
+        "C": "Executable code such as a function or an API call",
+        "D": "A replacement for all conversation messages"
+      },
+      "answer": "C",
+      "explanation": "A tool is code that can be executed to perform actions, including simple functions and external API calls.",
+      "option_analysis": {
+        "A": "A description can explain a tool, but it is not the executable capability.",
+        "B": "A final answer is distinct from the tool.",
+        "C": "This matches the source definition.",
+        "D": "The pattern still needs message handling."
+      },
+      "steps": [
+        "Identify the executable capability."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q02",
+      "number": 2,
+      "marks": 1,
+      "topic": "Function schema",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 84–108",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K04"
+      ],
+      "format": "mcq",
+      "difficulty": "Foundation",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "In the source’s get_current_time schema, which input is required?",
+      "statements": [],
+      "options": {
+        "A": "call_id as a city name",
+        "B": "location as a string",
+        "C": "A completed final answer",
+        "D": "A database administrator password"
+      },
+      "answer": "B",
+      "explanation": "The source’s function schema defines location as a string and lists it as required.",
+      "option_analysis": {
+        "A": "call_id matches calls and results; it is not the location parameter.",
+        "B": "This matches the schema.",
+        "C": "The answer is produced after the tool interaction.",
+        "D": "This is not a parameter of the illustrated tool."
+      },
+      "steps": [
+        "Read the parameters and required list."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q03",
+      "number": 3,
+      "marks": 1,
+      "topic": "Original scenario",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 61–173",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K05"
+      ],
+      "format": "mcq",
+      "difficulty": "Application",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "An agent returns a function name and location arguments for a time lookup. What should the application do next?",
+      "statements": [],
+      "options": {
+        "A": "Display the function name as the current time",
+        "B": "Skip execution and invent the tool result",
+        "C": "Delete the conversation context",
+        "D": "Execute the selected function with those arguments"
+      },
+      "answer": "D",
+      "explanation": "Original scenario: the returned call requests execution. The function’s result must then be returned to the model.",
+      "option_analysis": {
+        "A": "The function name is not the requested information.",
+        "B": "The source requires executing the function.",
+        "C": "The example preserves messages for the next turn.",
+        "D": "This is the next step in the source’s loop."
+      },
+      "steps": [
+        "Distinguish a tool call from a final answer.",
+        "Invoke the function."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q04",
+      "number": 4,
+      "marks": 1,
+      "topic": "Result matching",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 175–180",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K05"
+      ],
+      "format": "mcq",
+      "difficulty": "Application",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "Which field links the function_call_output to its corresponding function call in the source example?",
+      "statements": [],
+      "options": {
+        "A": "call_id",
+        "B": "The slide number",
+        "C": "The course title",
+        "D": "The function description alone"
+      },
+      "answer": "A",
+      "explanation": "The returned function_call_output copies the tool call’s call_id.",
+      "option_analysis": {
+        "A": "This is the matching identifier in the example.",
+        "B": "Slides are not part of the source call protocol.",
+        "C": "The course title is unrelated to matching.",
+        "D": "The description explains the tool; it does not identify this call."
+      },
+      "steps": [
+        "Inspect the returned output message."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q05",
+      "number": 5,
+      "marks": 1,
+      "topic": "Use cases",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 33–39",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T02"
+      ],
+      "knowledge_points": [
+        "T-K02"
+      ],
+      "format": "mcq",
+      "difficulty": "Foundation",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "Which source use case fits an agent coordinating a scheduler and an email service in a repetitive process?",
+      "statements": [],
+      "options": {
+        "A": "A standalone time lookup",
+        "B": "Workflow automation",
+        "C": "Function-schema naming alone",
+        "D": "Conversation history storage"
+      },
+      "answer": "B",
+      "explanation": "Original scenario: the source describes workflow automation as integrating tools such as schedulers, email services or data pipelines.",
+      "option_analysis": {
+        "A": "This does not describe the coordinated process in the question.",
+        "B": "This matches the source use case.",
+        "C": "Naming alone does not carry out the process.",
+        "D": "Retaining messages is a separate responsibility."
+      },
+      "steps": [
+        "Identify the multi-step or repetitive process.",
+        "Match it to the source use case."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q06",
+      "number": 6,
+      "marks": 1,
+      "topic": "Validation",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 53–53",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K03"
+      ],
+      "format": "mcq",
+      "difficulty": "Foundation",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "Which building block validates parameters and manages unexpected tool responses?",
+      "statements": [],
+      "options": {
+        "A": "Course navigation",
+        "B": "Tool naming alone",
+        "C": "Error handling and validation",
+        "D": "The lesson’s video thumbnail"
+      },
+      "answer": "C",
+      "explanation": "The source explicitly assigns failures, parameter validation and unexpected responses to this building block.",
+      "option_analysis": {
+        "A": "Navigation is outside the listed runtime responsibilities.",
+        "B": "A name alone does not perform validation.",
+        "C": "This matches the source.",
+        "D": "The thumbnail is a learning resource, not runtime validation."
+      },
+      "steps": [
+        "Identify the handling responsibility."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q07",
+      "number": 7,
+      "marks": 1,
+      "topic": "Remote tools",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 241–245",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K06"
+      ],
+      "format": "mcq",
+      "difficulty": "Application",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "What does the MCP server provide for the framework to load?",
+      "statements": [],
+      "options": {
+        "A": "Tools together with their schemas",
+        "B": "Only a final response for every possible request",
+        "C": "A guarantee that every query remains local",
+        "D": "A replacement for the model’s task selection"
+      },
+      "answer": "A",
+      "explanation": "An MCP server publishes tools and their schemas, which the framework can offer alongside local tools.",
+      "option_analysis": {
+        "A": "This matches the source description.",
+        "B": "Published tools still need to be selected and used.",
+        "C": "The source says remote-tool queries are sent to that server.",
+        "D": "The agent still decides when to call available tools."
+      },
+      "steps": [
+        "Identify what is published.",
+        "Separate tool availability from execution."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q08",
+      "number": 8,
+      "marks": 1,
+      "topic": "Service categories",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 278–289",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K07"
+      ],
+      "format": "mcq",
+      "difficulty": "Foundation",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "Which pairing matches the source’s managed-service tool categories?",
+      "statements": [],
+      "options": {
+        "A": "Code Interpreter = knowledge; File Search = action",
+        "B": "Every tool belongs only to a thread",
+        "C": "Function Calling = knowledge; search = action",
+        "D": "File Search = knowledge; Code Interpreter = action"
+      },
+      "answer": "D",
+      "explanation": "File Search appears under knowledge tools; Code Interpreter appears under action tools.",
+      "option_analysis": {
+        "A": "This reverses the listed categories.",
+        "B": "A thread keeps message history; it is not a category.",
+        "C": "This reverses the listed categories.",
+        "D": "Both entries match the source list."
+      },
+      "steps": [
+        "Read each source category."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q09",
+      "number": 9,
+      "marks": 1,
+      "topic": "State and capabilities",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 291–291",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T03"
+      ],
+      "knowledge_points": [
+        "T-K07"
+      ],
+      "format": "mcq",
+      "difficulty": "Foundation",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "Which statement correctly distinguishes a toolset from a thread?",
+      "statements": [],
+      "options": {
+        "A": "A thread groups tools; a toolset stores messages",
+        "B": "A toolset groups tools; a thread retains conversation history",
+        "C": "Both mean the final model answer",
+        "D": "Neither is used by the source’s service example"
+      },
+      "answer": "B",
+      "explanation": "The source says tools can be used together as a toolset and threads track the message history of a conversation.",
+      "option_analysis": {
+        "A": "This reverses their roles.",
+        "B": "This matches the stated roles.",
+        "C": "Neither term means the final answer.",
+        "D": "Both are named in the example."
+      },
+      "steps": [
+        "Separate available capabilities from message history."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    },
+    {
+      "id": "T-Q10",
+      "number": 10,
+      "marks": 1,
+      "topic": "Original access scenario",
+      "subsection": "Microsoft AI Agents for Beginners, Tool Use, lines 329–333",
+      "pages": [],
+      "learning_objectives": [
+        "LO-T04"
+      ],
+      "knowledge_points": [
+        "T-K08"
+      ],
+      "format": "mcq",
+      "difficulty": "Application",
+      "scenario_id": null,
+      "scenario_title": null,
+      "scenario": null,
+      "stem": "An agent is intended to answer questions by reading a database. Which access arrangement follows the lesson’s recommendation?",
+      "statements": [],
+      "options": {
+        "A": "Give it permission to drop tables so every request succeeds",
+        "B": "Use unrestricted database administration access",
+        "C": "Assign restricted read-only access, such as a SELECT role",
+        "D": "Rely on the tool’s name instead of database permissions"
+      },
+      "answer": "C",
+      "explanation": "Original scenario: the lesson recommends read-only database configuration and a read-only SELECT role for the named database services.",
+      "option_analysis": {
+        "A": "Dropping tables exceeds the source’s reading boundary.",
+        "B": "Unrestricted administration conflicts with the recommendation.",
+        "C": "This implements the stated restricted reading access.",
+        "D": "Naming is not the permission configuration described."
+      },
+      "steps": [
+        "Identify the intended reading task.",
+        "Apply the source’s restricted access recommendation."
+      ],
+      "exam_tip": "",
+      "pitfall": "",
+      "original": true
+    }
+  ]
+}

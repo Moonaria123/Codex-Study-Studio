@@ -1,0 +1,104 @@
+{
+  "course_id": "study-studio-ai-agents-tool-use",
+  "title": "AI Agents: Tool Use in Practice",
+  "slide_manifest_sha256": "595a4f2d6e302364b953a074fa2405e92ecd870b822ccc13ad3f065253bcff05",
+  "slide_count": 10,
+  "lecture_pdf_pages": 10,
+  "practice_questions": 10,
+  "practice_pdf_pages": 6,
+  "all_speaker_notes_match": true,
+  "all_script_narrations_match": true,
+  "all_spoken_segments_match": true,
+  "full_decode_exit_code": 0,
+  "lecture": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "22050",
+        "channels": 1
+      }
+    ],
+    "format": {
+      "duration": "356.080408",
+      "size": "7654822"
+    }
+  },
+  "preview": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "22050",
+        "channels": 1
+      }
+    ],
+    "format": {
+      "duration": "15.000000",
+      "size": "387654"
+    }
+  },
+  "gif_frames": 150,
+  "gif_duration_ms": 15000,
+  "gif_size_bytes": 471292,
+  "thinking_pauses": [
+    {
+      "id": "S09",
+      "seconds": 5.0
+    }
+  ],
+  "voice": "Microsoft Zira Desktop (en-US)",
+  "auditory_review": "Not performed; signal and decode checks do not establish pronunciation quality.",
+  "files": {
+    "Knowledge_Overview.png": {
+      "bytes": 209716,
+      "sha256": "71466f9f4884003796b28c525f02fa586ac4e05e6b131fea4535f958e6978cb1"
+    },
+    "Knowledge_Overview.svg": {
+      "bytes": 8889,
+      "sha256": "b505e641c6297e680024b5540a361a9e2ce7aa32739e2f73f3a0a68ef9227b79"
+    },
+    "Lecture.mp4": {
+      "bytes": 7654822,
+      "sha256": "7f7ea6b50c7b3fd72ab808af63cc756ff4f719dd0fb79911bfb793704464dfba"
+    },
+    "Lecture.pdf": {
+      "bytes": 180276,
+      "sha256": "86fb15a409430d659c007d7d482c03a9c3f4c139f443de773b12f4d4a784046b"
+    },
+    "Lecture.pptx": {
+      "bytes": 70823,
+      "sha256": "ba54c72da2f3d16969855538b1d59c675f524ebdbfe18e8028e3891cefe2a4fe"
+    },
+    "Lecture.srt": {
+      "bytes": 6880,
+      "sha256": "86d8905bb168b711a5162fb70450db724588de749c90ada68588debbbc76f9ef"
+    },
+    "Lecture_Preview_15s.mp4": {
+      "bytes": 387654,
+      "sha256": "538f54314d4fe6084c4117783a775d30c5d9b44364499baa40d47a1467be5426"
+    },
+    "Practice_and_Answers.pdf": {
+      "bytes": 84431,
+      "sha256": "251bb34babd0120eb44200e12e103357442995b97fce8bb8d7be7406dede242f"
+    }
+  },
+  "visual_review": "All 10 PowerPoint-rendered slide pages, all 10 video midpoint frames, all 6 practice PDF pages, final overview and preview poster inspected. No clipped text or caption/source overlap observed.",
+  "audio_signal_preview": {
+    "mean_db": -21.7,
+    "max_db": -3.6
+  },
+  "public_metadata_review": "No personal author name in the PPTX or PDF metadata."
+}

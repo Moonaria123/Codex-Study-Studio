@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "input": "examples/ai-agents-tool-use/StudyHub.html",
+  "channel": "msedge",
+  "checks": [
+    {
+      "name": "chapter-4-map-identity",
+      "status": "PASS"
+    },
+    {
+      "name": "chapter-4-flashcard-identity-and-save",
+      "status": "PASS"
+    },
+    {
+      "name": "chapter-4-quiz-reload-and-resume",
+      "status": "PASS"
+    },
+    {
+      "name": "chapter-4-records-and-backup-round-trip",
+      "status": "PASS"
+    },
+    {
+      "name": "no-browser-errors-or-network-requests",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "inputSha256": "773a7fe489bc99e1e2e4540f8fcba4da519f5ab77669d327191b9ca215b10e79",
+  "chapterId": "4",
+  "browserVersion": "156.0.4314.58",
+  "finishedAt": "2026-11-01T16:38:52.300Z"
+}

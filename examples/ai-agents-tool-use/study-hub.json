@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "courseId": "study-studio-ai-agents-tool-use",
+  "courseTitle": "AI Agents: Tool Use in Practice",
+  "courseSubtitle": "MICROSOFT AI AGENTS FOR BEGINNERS · OPEN COURSE SAMPLE",
+  "contentVersion": "2026-11-02.2",
+  "storageKey": "study-studio.ai-agents-tool-use.v1",
+  "downloadPrefix": "AgentToolUse",
+  "timeZone": "UTC",
+  "chapters": [
+    {
+      "id": "4",
+      "number": 4,
+      "title": "Tool Use Design Pattern",
+      "studio": "_studio/chapter-studio.json",
+      "questions": "_studio/chapter-questions.json"
+    }
+  ]
+}

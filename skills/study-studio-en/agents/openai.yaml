@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study Studio — English"
+  short_description: "Build source-grounded lessons, videos and a portable study hub"
+  default_prompt: "Use $study-studio-en to organise this book by chapter in my chosen folder and create the learning resources requested for the selected chapters."

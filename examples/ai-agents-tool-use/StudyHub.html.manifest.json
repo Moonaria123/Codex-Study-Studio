@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "file": "StudyHub.html",
+  "size": 205448,
+  "sha256": "8348c356bfd3cce4d525f920073b9585bba61525488b39ec924afc9e3768f3bd",
+  "courseId": "study-studio-ai-agents-tool-use",
+  "storageKey": "study-studio.ai-agents-tool-use.v1",
+  "contentVersion": "2026-11-02.2",
+  "chapters": [
+    {
+      "id": "4",
+      "modules": [
+        "mindmap",
+        "flashcards",
+        "quiz"
+      ],
+      "cards": 12,
+      "questions": 10
+    }
+  ],
+  "inputs": [
+    {
+      "file": "study-hub.json",
+      "sha256": "253e7f97f5ed5fd99eeceba5627ea101bac896c43768353585be5409c207a10c"
+    },
+    {
+      "file": "_studio/chapter-studio.json",
+      "sha256": "8514e50745c25de9d6300dae37727d178b06d4d02486c3e28f3856029c98dd90"
+    },
+    {
+      "file": "_studio/chapter-questions.json",
+      "sha256": "2926a9aaca811a6c0af7e823dcf004538805836a231e5aa327ea0f0c8a548ae2"
+    }
+  ]
+}

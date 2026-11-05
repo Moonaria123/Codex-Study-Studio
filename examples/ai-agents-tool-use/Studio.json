@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "courseId": "study-studio-ai-agents-tool-use",
+  "title": "AI Agents: Tool Use in Practice",
+  "language": "en-GB",
+  "version": "2026-11-02.2",
+  "timeZone": "UTC",
+  "source": {
+    "title": "AI Agents for Beginners — Tool Use Design Pattern",
+    "institution": "Microsoft",
+    "kind": "open agent-development course",
+    "repository": "https://github.com/microsoft/ai-agents-for-beginners",
+    "commit": "f09e94ffe170f8af6d3db7c42987bbe4db227723",
+    "url": "https://github.com/microsoft/ai-agents-for-beginners/blob/f09e94ffe170f8af6d3db7c42987bbe4db227723/04-tool-use/README.md",
+    "licence": "MIT",
+    "copyright": "Copyright (c) Microsoft Corporation.",
+    "licenceFile": "_source/MICROSOFT-MIT-LICENSE.txt",
+    "checked": "2026-11-02",
+    "sha256": {
+      "Tool_Use_README.md": "82855de0e9a81e7d69b004db1fef7dccb629b63f04f6ab02b957ddfb0908aa3b",
+      "Curriculum_README.md": "566d58efed1cb9851ef5264d5230fbf4a70192771f0e66121344702720c39954",
+      "MICROSOFT-MIT-LICENSE.txt": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    }
+  },
+  "scope": {
+    "curriculumOverview": "overview and complete 18-lesson index read",
+    "wholeCourseRead": false,
+    "selectedLessonRead": "README lines 1–360, functioncalling-diagram.png and agent-service-in-action.jpg",
+    "notebooksVideosExternalDocs": "not read or executed",
+    "publicExcerpts": [
+      [
+        5,
+        67
+      ],
+      [
+        84,
+        108
+      ],
+      [
+        124,
+        126
+      ],
+      [
+        138,
+        141
+      ],
+      [
+        163,
+        180
+      ],
+      [
+        184,
+        192
+      ],
+      [
+        208,
+        210
+      ],
+      [
+        216,
+        216
+      ],
+      [
+        241,
+        245
+      ],
+      [
+        268,
+        291
+      ],
+      [
+        329,
+        333
+      ]
+    ]
+  },
+  "chapters": [
+    {
+      "id": "4",
+      "number": 4,
+      "upstreamLesson": "04",
+      "title": "Tool Use Design Pattern",
+      "locatorType": "markdown-lines",
+      "originalRange": [
+        1,
+        360
+      ],
+      "printedPages": null,
+      "sourcePath": "Chapter 04 - Tool Use/Chapter_Source.md",
+      "reviewPath": "Chapter 04 - Tool Use/CharpterReview.md",
+      "closeReadingStatus": "complete for selected README and two explanatory diagrams",
+      "knowledgePoints": 8,
+      "flashcards": 12,
+      "originalQuestions": 10,
+      "slides": 10,
+      "detailedMapNodes": 17
+    }
+  ],
+  "modules": {
+    "outline": "authored",
+    "syllabus": "authored: four provider goals",
+    "chapterReview": "authored",
+    "hubData": "authored",
+    "slidesAndNarrationData": "authored",
+    "PowerPoint": "generated; 10 slides rendered and notes matched",
+    "video": "generated; complete decoding and subtitle checks passed; subjective listening not performed",
+    "overview": "generated; SVG and PNG visually checked",
+    "practicePDF": "generated; 10 original questions and answers, 6 pages checked",
+    "StudyHub": "built; browser regression passed; final chapter-4 identity and backup checks passed"
+  },
+  "productionNotes": [
+    "The sample teaches the design and source-described examples, not a runnable provider integration.",
+    "The source has a syntactically joined CodeInterpreterTool()toolset.add(...) expression at L321 and an illustrative function body with ellipsis at L227; those implementation snippets are not executed or repaired.",
+    "Source diagrams include vendor marks and older framework visuals; they were inspected as evidence but are not copied into the showcase.",
+    "No third-party remote tool service was contacted.",
+    "The full curriculum has not been read; the complete index provides navigation only."
+  ],
+  "delivery": {
+    "publicRepository": "https://github.com/Moonaria123/Codex-Study-Studio",
+    "studyHub": "StudyHub.html",
+    "hostedStudyHub": "https://moonaria123.github.io/Codex-Study-Studio/demo/StudyHub.html",
+    "youtubeFullLesson": "https://www.youtube.com/watch?v=aLF_IylZ3y8"
+  },
+  "verification": {
+    "content": "_studio/content-validation.json",
+    "media": "../../verification/media-verification.json",
+    "hubFunctional": "../../verification/hub-qa.json",
+    "hubFinalIdentity": "../../verification/hub-identity-qa.json",
+    "scope": "Source-grounded lesson sample; technical media checks only, no subjective listening approval.",
+    "youtubePublication": "../../verification/youtube-publication.json"
+  }
+}

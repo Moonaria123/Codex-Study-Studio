@@ -1,0 +1,4 @@
+interface:
+  display_name: "Study Studio — 中文版"
+  short_description: "从全书纲要和官方考纲到章节教学资源、交互网页与学习记录备份"
+  default_prompt: "使用 $study-studio-zh，将这本教材按章节整理，在指定主文件夹下建立学习目录，并为指定章节制作所需学习资源。"

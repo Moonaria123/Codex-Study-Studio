@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-11-04T16:56:38.494454+00:00",
+  "version": "v1.2.0",
+  "licence": "PolyForm-Noncommercial-1.0.0",
+  "officialTextSource": "https://polyformproject.org/licenses/noncommercial/1.0.0.txt",
+  "officialTextPreserved": true,
+  "onlyAddition": "Required Notice identifying Moonaria123",
+  "upstreamMitUnchanged": true,
+  "oldMitReleasesRetained": true,
+  "packagePolicyParity": true,
+  "downloadLocation": "GitHub Pages /downloads/",
+  "publicationMethod": "Git push and existing Pages deployment; no replacement of historical Release assets",
+  "archives": {
+    "ai-agents-tool-use-example.zip": "d8644a4e84a97e6410fca3625c23d26f65a04b874e54e7a34be5bffd600424bf",
+    "study-studio-en.zip": "2d364152d2ebf3bdaeb89803eb1e2d34bca26550b35e8160735147417a6fb857",
+    "study-studio-zh.zip": "2c65d47fb6f0a874ac089422796c686b7035cb0f9d71b786d864319828121134"
+  }
+}

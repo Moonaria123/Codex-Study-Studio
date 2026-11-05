@@ -1,0 +1,110 @@
+[
+  {
+    "number": "01",
+    "title": "Intro to AI Agents and Agent Use Cases",
+    "path": "01-intro-to-ai-agents/README.md",
+    "line": 98
+  },
+  {
+    "number": "02",
+    "title": "Exploring AI Agentic Frameworks",
+    "path": "02-explore-agentic-frameworks/README.md",
+    "line": 99
+  },
+  {
+    "number": "03",
+    "title": "Understanding AI Agentic Design Patterns",
+    "path": "03-agentic-design-patterns/README.md",
+    "line": 100
+  },
+  {
+    "number": "04",
+    "title": "Tool Use Design Pattern",
+    "path": "04-tool-use/README.md",
+    "line": 101
+  },
+  {
+    "number": "05",
+    "title": "Agentic RAG",
+    "path": "05-agentic-rag/README.md",
+    "line": 102
+  },
+  {
+    "number": "06",
+    "title": "Building Trustworthy AI Agents",
+    "path": "06-building-trustworthy-agents/README.md",
+    "line": 103
+  },
+  {
+    "number": "07",
+    "title": "Planning Design Pattern",
+    "path": "07-planning-design/README.md",
+    "line": 104
+  },
+  {
+    "number": "08",
+    "title": "Multi-Agent Design Pattern",
+    "path": "08-multi-agent/README.md",
+    "line": 105
+  },
+  {
+    "number": "09",
+    "title": "Metacognition Design Pattern",
+    "path": "09-metacognition/README.md",
+    "line": 106
+  },
+  {
+    "number": "10",
+    "title": "AI Agents in Production",
+    "path": "10-ai-agents-production/README.md",
+    "line": 107
+  },
+  {
+    "number": "11",
+    "title": "Using Agentic Protocols (MCP, A2A and NLWeb)",
+    "path": "11-agentic-protocols/README.md",
+    "line": 108
+  },
+  {
+    "number": "12",
+    "title": "Context Engineering for AI Agents",
+    "path": "12-context-engineering/README.md",
+    "line": 109
+  },
+  {
+    "number": "13",
+    "title": "Managing Agentic Memory",
+    "path": "13-agent-memory/README.md",
+    "line": 110
+  },
+  {
+    "number": "14",
+    "title": "Exploring Microsoft Agent Framework",
+    "path": "14-microsoft-agent-framework/README.md",
+    "line": 111
+  },
+  {
+    "number": "15",
+    "title": "Building Computer Use Agents (CUA)",
+    "path": "15-browser-use/README.md",
+    "line": 112
+  },
+  {
+    "number": "16",
+    "title": "Deploying Scalable Agents",
+    "path": "16-deploying-scalable-agents/README.md",
+    "line": 113
+  },
+  {
+    "number": "17",
+    "title": "Creating Local AI Agents",
+    "path": "17-creating-local-ai-agents/README.md",
+    "line": 114
+  },
+  {
+    "number": "18",
+    "title": "Securing AI Agents",
+    "path": "18-securing-ai-agents/README.md",
+    "line": 115
+  }
+]

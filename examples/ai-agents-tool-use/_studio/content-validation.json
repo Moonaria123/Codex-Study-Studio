@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-02",
+  "checks": {
+    "unique_node_ids": true,
+    "unique_card_ids": true,
+    "unique_question_ids": true,
+    "complete_question_options_and_analysis": true,
+    "original_questions_with_locators": true,
+    "all_knowledge_ids_on_slides": true,
+    "all_knowledge_ids_in_cards": true,
+    "all_knowledge_ids_in_questions": true,
+    "all_knowledge_ids_on_map": true,
+    "all_nodes_have_substantive_details": true,
+    "all_nodes_have_frozen_source_indexes": true,
+    "slide_bullet_limits": true,
+    "source_ranges_valid": true,
+    "thinking_pause_precedes_solution": true,
+    "public_timezone_utc": true,
+    "source_excerpts_exact": true,
+    "available_original_hashes_match": true,
+    "no_protective_disclaimers": true,
+    "no_unrelated_course_defaults": true
+  },
+  "counts": {
+    "slides": 10,
+    "narrationWords": 672,
+    "mapNodes": 17,
+    "flashcards": 12,
+    "questions": 10,
+    "knowledgePoints": 8
+  },
+  "runtimeAndMediaValidation": "Separate production-lane evidence"
+}

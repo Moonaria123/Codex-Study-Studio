@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "channel": "msedge",
+  "checks": [
+    {
+      "name": "published-video-matches-agent-lesson",
+      "status": "PASS"
+    },
+    {
+      "name": "index.html-hero-loaded",
+      "status": "PASS",
+      "details": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "name": "index.html-local-assets-and-anchor-targets",
+      "status": "PASS",
+      "details": {
+        "localReferences": 8
+      }
+    },
+    {
+      "name": "index.html-contents-navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "index.html-desktop-layout",
+      "status": "PASS",
+      "details": {
+        "viewport": 1366,
+        "scroll": 1366
+      }
+    },
+    {
+      "name": "index.html-15-second-video-metadata-and-seek",
+      "status": "PASS",
+      "details": {
+        "duration": 15,
+        "width": 1280,
+        "height": 720,
+        "error": null
+      }
+    },
+    {
+      "name": "index.html-360-navigation-single-line-labels",
+      "status": "PASS",
+      "details": {
+        "links": [
+          {
+            "text": "Explore",
+            "lines": 1
+          },
+          {
+            "text": "Workflow",
+            "lines": 1
+          },
+          {
+            "text": "Install",
+            "lines": 1
+          },
+          {
+            "text": "简体中文",
+            "lines": 1
+          },
+          {
+            "text": "GitHub ↗",
+            "lines": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "index.html-360-layout",
+      "status": "PASS",
+      "details": {
+        "viewport": 360,
+        "scroll": 360
+      }
+    },
+    {
+      "name": "index.html-language-switch",
+      "status": "PASS"
+    },
+    {
+      "name": "zh.html-hero-loaded",
+      "status": "PASS",
+      "details": {
+        "width": 1672,
+        "height": 941
+      }
+    },
+    {
+      "name": "zh.html-local-assets-and-anchor-targets",
+      "status": "PASS",
+      "details": {
+        "localReferences": 7
+      }
+    },
+    {
+      "name": "zh.html-contents-navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "zh.html-desktop-layout",
+      "status": "PASS",
+      "details": {
+        "viewport": 1366,
+        "scroll": 1366
+      }
+    },
+    {
+      "name": "zh.html-15-second-video-metadata-and-seek",
+      "status": "PASS",
+      "details": {
+        "duration": 15,
+        "width": 1280,
+        "height": 720,
+        "error": null
+      }
+    },
+    {
+      "name": "zh.html-360-navigation-single-line-labels",
+      "status": "PASS",
+      "details": {
+        "links": [
+          {
+            "text": "体验样例",
+            "lines": 1
+          },
+          {
+            "text": "工作流程",
+            "lines": 1
+          },
+          {
+            "text": "安装技能",
+            "lines": 1
+          },
+          {
+            "text": "English",
+            "lines": 1
+          },
+          {
+            "text": "GitHub ↗",
+            "lines": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "zh.html-360-heading-no-orphan",
+      "status": "PASS",
+      "details": {
+        "lines": [
+          "让下一本书，",
+          "成为学习的新起点。"
+        ]
+      }
+    },
+    {
+      "name": "zh.html-360-layout",
+      "status": "PASS",
+      "details": {
+        "viewport": 360,
+        "scroll": 360
+      }
+    },
+    {
+      "name": "zh.html-language-switch",
+      "status": "PASS"
+    },
+    {
+      "name": "no-script-errors-missing-resources-or-external-network",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "externalRequests": [],
+  "stylesheetSha256": "06056f339857c1b6054c0616dfca3824252da21a8b4f3b55489a0783a5fc451a",
+  "videoSha256": "538f54314d4fe6084c4117783a775d30c5d9b44364499baa40d47a1467be5426",
+  "index.html": {
+    "sha256": "043b728d6c0d6fcda5646281782d64042108e49f2d632d4178a37cc389d5f57b"
+  },
+  "zh.html": {
+    "sha256": "383310397250f2e2ed2cf0330cd2cdd6d946f5bb1a73744ad35545685599cbc0"
+  },
+  "browserVersion": "156.0.4314.58",
+  "finishedAt": "2026-11-04T16:56:20.806Z"
+}

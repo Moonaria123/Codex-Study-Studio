@@ -1,0 +1,8 @@
+{
+  "created": "2026-11-01",
+  "tool": "OpenAI built-in image generation",
+  "asset": "hero.png",
+  "prompt": "Use case: ads-marketing. Create a stunning wide 16:9 editorial hero illustration for the open-source product Codex Study Studio, which transforms a source textbook into connected teaching resources. A quiet high-end academic design with warm ivory paper background, charcoal typography, deep teal and small vermilion accents. On the left, beautiful exact large typography 'STUDY STUDIO' and underneath 'One source. A complete learning studio.' On the right, a sculptural open book whose pages gracefully transform into a constellation of clean floating learning panels: a node-and-edge mind map, a flashcard, a small presentation chart, a multiple-choice quiz, and a video tile with play triangle. Show delicate luminous connections, paper-cut layers, subtle physical shadows and fine ruled-paper details. Sophisticated tactile 3D editorial illustration, exceptional spacing and visual hierarchy, gallery-quality rendering. Suitable for an elegant GitHub repository banner, readable at small size. No real people, no institutional marks, no third-party logos, no book cover reproduction, no watermarks. Product title and tagline only, no other lettering.",
+  "inputs": "No reference images supplied; no third-party stock assets or logos.",
+  "usage": "Repository README and static showcase hero."
+}

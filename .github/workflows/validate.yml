@@ -1,0 +1,21 @@
+name: Validate packages
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Check release invariants
+        run: python3 scripts/check_repository.py
+      - name: Check node explanations and source validation
+        run: python3 scripts/test_node_details.py
+      - name: Check shared browser runtime syntax
+        run: |
+          for file in skills/study-studio-en/assets/study-hub/*.js; do
+            node --check "$file"
+          done
